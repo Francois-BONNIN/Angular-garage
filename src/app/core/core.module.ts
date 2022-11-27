@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AuthFormComponent } from './auth-form/auth-form.component';
 import { RegisterFormComponent } from './register-form/register-form.component';
+import {RouterModule} from "@angular/router";
 
 
 
@@ -14,7 +15,8 @@ import { RegisterFormComponent } from './register-form/register-form.component';
         AuthFormComponent, RegisterFormComponent
     ],
     imports: [
-        CommonModule
+        CommonModule,
+        RouterModule
     ]
 })
 export class CoreModule { }
